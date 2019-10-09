@@ -18,7 +18,6 @@ type Menu struct {
 }
 
 func connectionDB() *sql.DB {
-	//dsn := "username:passwd@tcp(127.0.0.1:3306)/test?parseTime=true"
 	db, err := sql.Open("sqlite3", "./cocos.db")
 	if err != nil {
 		panic(err)
