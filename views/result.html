@@ -14,9 +14,16 @@
     <div class="caption text-center">
         <h1>結果</h1>
         {{range .}}
-            <p>{{.Name}} {{.Price}}円</p>
+            <p style="display:inline;">{{.Name}} </p><p class="price" style="display:inline;">{{.Price}}</p><p style="display:inline;">円</p><br>
         {{end}}
-        <p></p>
+        <br>
+        <p style="display:inline;">合計: </p><p id="total" style="display:inline;"></p><p style="display:inline;">円</p>
+
+        <!-- JavaScript File Loading -->
+        <script src="../assets/js/total.js"></script>
+
+        <br>
+        <a href="/" class="btn btn-outline-danger btn-lg">トップページに戻る</a>
     </div>
 </body>
 </html>
